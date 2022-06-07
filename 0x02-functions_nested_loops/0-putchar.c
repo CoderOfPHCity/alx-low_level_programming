@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * main- prints '_putchar 
- * Return: Always 0.
+ * main- prints '_putchar'
+ * Return: Always 0 (success)
 */
 int main(void)
 {
-char *sh = "_putchar";
-while (*sh)
+	char str[] = "_putchar";
+	int ch;
+for (ch = 0; ch < 8; ++ch)
 {
-_putchar(*sh);
-sh++;
+_putchar(str[ch]);
 }
-_putchar('\n');
+ _putchar('\n');
 return (0);
 }
